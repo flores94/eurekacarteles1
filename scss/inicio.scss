@@ -1,0 +1,444 @@
+/*import*/
+@import "generales";
+@import "diseno";
+@import "carteleria";
+@import "normalize";
+@import "footer";
+@import "mediaquery";
+
+/* fin del import*/
+
+/* header */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: var(--lemon);
+    width: 100%;
+    z-index: 3 !important;
+    height: 8rem;
+    display: block;
+   
+
+        .menu-logo {
+            max-width: 270px;
+            margin-left: 3rem;
+            padding: 1.5rem 0rem;
+            position: absolute !important;
+            z-index: 4;
+        }
+
+        input{
+            display: none;
+            top: -100px;
+        }
+
+        .menuheader{
+            height: auto;
+            text-align: center;
+            display: flex;
+            justify-content: flex-end;
+            margin:auto;
+            position:relative;
+            z-index: 2;
+        }
+    
+
+
+        .cont-menu_items {
+            list-style: none;
+            display: flex;
+            margin-right: 3%;
+            z-index: 4;
+            margin-top: 0;
+    
+            
+            .menuheader--tittle{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 1.2rem;
+                padding: 1.7rem; 
+            }
+
+            .menuheader--tittle a{
+                     text-decoration: none;
+                     color: rgb(32, 30, 2);
+            }
+
+            .menuheader--tittle:hover a{
+                background-color:  var(--titanium-yellow); 
+                transition: 0.2s ease-in-out;
+                padding: 1.7rem;
+            } 
+
+            .eurekaobjetos{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 1.2rem;
+                color: white;
+                background-color: #00a7e1ff;
+                padding-top: 1.7rem;
+                padding-bottom: 1.7rem;
+
+                a{
+                    text-decoration: none;
+                    padding: 1.7rem;
+                    font-size: 1.2rem;
+                    color: white;
+                    text-align: center;
+                }
+            }
+
+            .eurekaobjetos:hover a{
+                font-family: 'Montserrat', sans-serif;
+                background-color:  rgb(0, 92, 122); 
+                transition: 0.2s ease-in-out;
+                padding: 1.7rem;
+                color: white;
+              }
+        }
+
+        .input + label {
+            display: none;
+            cursor: pointer;
+            margin-left: 2rem;
+            padding: 1.7rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .btn_menu:hover i{
+            border-radius: 5px;
+            background-color: var(--titanium-yellow);
+            padding: 1,7rem;
+        }
+
+
+    
+}
+
+/* fin header */
+
+/* inicio main */
+
+  .carousel-slide{
+      width: 100%;
+      z-index: 1;
+  }
+
+
+
+/*
+    header {
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header picture img {
+        max-width: 200px;
+        margin-left: 2rem;
+        padding: 1.5rem 1rem;
+        z-index: 1;
+    }
+
+    nav .menu-header {
+        display: none;
+        position: absolute;
+        width: 40%;
+        background-color: var(--lemon);
+        top: 50px;
+        justify-content: left;
+    }
+
+    .menuheader__item:hover ul{
+        width: 40%
+    }
+
+    nav ul {
+        flex-direction: column;
+
+    }
+
+    #btn-menu:checked ~ .menu-header{
+        margin: 0%;
+        display: block;
+        
+
+    }
+
+*/
+
+/* inicio nosotros */
+
+.grid-nosotros {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nosotros-pag___titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: #333847ff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-align: left;
+
+}
+.nosotros-pag {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.imagen1 {
+    text-align: center;
+}
+
+
+.imagen1-nosotros {
+    max-width: 80%;
+}
+
+#nosotros-pag___subtitulo {
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    color: #888c9aff ;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #101935ff;
+    text-align: left;
+}
+.nosotros-titulo4 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 2rem;
+    color: #888c9aff;
+    padding: 20px;
+    text-align: center;
+  }
+  h2:hover {
+    transition: ease-in 1s, ease-out 1s;
+    font-size: 3rem;
+}
+
+/* inicio carteleria-diseno */
+
+.titulos-categorias {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 2rem;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.carteleria{
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ff36abff;
+
+    .galeria1{
+        width: 80%;
+        margin: auto;
+        padding: 30px;
+
+        .slide-imagen {
+             border: 0,7rem;
+             border-style: solid;
+             border-color: white;
+             border-radius: 7%;
+             border-radius: 20px blue;
+         }
+
+         .slide-imagen:hover {
+             background-color: white;
+         }
+         
+         .vermas{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 400 !important;
+            font-size: 1.5rem;
+            color: white;
+            margin-top: 1rem;
+            padding: 0.2rem;
+            background-color: #a11767ff;
+            border-radius: 30px;
+        }
+   
+    }
+}
+.diseno{
+        max-width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #101935;
+
+        .galeria1{
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+
+            .slide-imagen {
+                 border: 0,7rem;
+                 border-style: solid;
+                 border-color: #162552;
+                 border-radius: 7%;
+                 border-radius: 20px blue;
+             }
+
+             .slide-imagen:hover {
+                 background-color: white;
+             }
+             
+             .vermas{
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                font-family: 'Montserrat', sans-serif !important;
+                font-weight: 400 !important;
+                font-size: 1.5rem;
+                color: white;
+                margin-top: 1rem;
+                padding: 0.2rem;
+                background-color: #162552;
+                border-radius: 30px;
+            }
+       
+        }
+}
+
+/* fin carteleria-diseno */
+
+
+/* inicio cliente */
+
+.padre-cliente {
+    width: 100%;
+    height:  20vh;
+    background:#00a7e1ff;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}   
+.subpadre-cliente {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.titulos-cliente {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #333847ff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-top: -37vh;
+
+}
+
+.imagen__fortuna {
+    text-align: center;
+}
+
+
+.gato-fortuna{
+    max-width: 35vh;
+    margin-top: -40vh;
+
+}
+
+.cliente-texto {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 5vh;
+}
+
+/*
+.padre-cliente {
+        width: 100%;
+        height:  35vh;
+        background: linear-gradient(180deg, #ffffff 50%, #00a7e1ff 50%);
+        margin-top: 10vh;
+
+
+    .padre-cliente2 {
+        width: 80%;
+        margin: auto;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+        align-items: center;
+    
+
+        .imagen__fortuna--left {
+            width: 80%;
+            height: auto;
+            grid-column: 4 / 7;
+            margin-top: 5vh;
+            
+        }
+        .gato-fortuna {
+            width: 95%;
+            max-width: 400px;
+         }
+        
+    
+        .titulos-cliente h2 {
+            text-align: center;
+            margin-top: -20vh;
+            font-family: 'Montserrat', sans-serif;
+             font-weight: 800;
+             font-size: 2rem;
+             color: #00a7e1ff;
+            padding: 20px;
+ 
+        }
+        .texto-cliente{
+            grid-column: 7 / 11;
+            margin-top: -40vh;
+
+            .cliente-texto {
+                font-family: 'Montserrat', sans-serif !important;
+                font-weight: 600 !important;
+                font-size: 1.5rem;
+                color:white;
+          }
+        }
+
+    }    
+}
+*/
+    
+/* fin cliente */
+
+
+
+
